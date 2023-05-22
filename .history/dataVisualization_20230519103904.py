@@ -24,32 +24,16 @@ plt.show()'''
 
 
 
-# mainInfo = breast_cancer_data.describe()     # info on count, mean, median(50%), std, min, max throughout columns
+mainInfo = breast_cancer_data.describe()     # info on count, mean, median(50%), std, min, max throughout columns
 # print(mainInfo)
 
-'''describe = breast_cancer_data.drop(columns='id', axis=1, inplace=True)
-describe = breast_cancer_data.drop(columns='diagnosis', axis=1, inplace=True)
-
-print(describe)
-
-for column in breast_cancer_data:
-    plt.show()
-    breast_cancer_data.boxplot([column]) '''
 
 
-# correlation matrix to check relations between different variables in our data set
-
-describe = breast_cancer_data.drop(columns='diagnosis', axis=1, inplace=True)
-describe = breast_cancer_data.drop(columns='id', axis=1, inplace=True)
-
-correlation_matrix = breast_cancer_data.corr()
-sns.heatmap(correlation_matrix, cbar=True, fmt='.1f', annot=True, cmap='Blues')
-plt.savefig('Correlation Heat map')
-plt.show()
-
-
-
-
-
-
+while True:
+    broj = (input("Unesite neki brbroj oj: "))
+    if broj == "q"
+        break
+    if broj % 2 == 0:
+        continue
+    print(broj, "Kvadrat ovog broja je: ", broj * broj)
 

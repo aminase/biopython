@@ -42,10 +42,11 @@ for column in breast_cancer_data:
 describe = breast_cancer_data.drop(columns='diagnosis', axis=1, inplace=True)
 describe = breast_cancer_data.drop(columns='id', axis=1, inplace=True)
 
+print(describe)
 correlation_matrix = breast_cancer_data.corr()
-sns.heatmap(correlation_matrix, cbar=True, fmt='.1f', annot=True, cmap='Blues')
-plt.savefig('Correlation Heat map')
-plt.show()
+plt.figure(figsize=(20, 20))
+sns.heatmap(correlation_matrix, cbar=True, fmt= '.1f', annot= True, cmap= 'Blues')
+plt.savefig("Correlation heat map") 
 
 
 
